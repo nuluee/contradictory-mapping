@@ -67,6 +67,7 @@ div#draw{
 	background-image: url(../img/back001.png);
 	background-position: center;
 	background-repeat: no-repeat;
+	top:300px;
 }
 
 
@@ -77,11 +78,11 @@ div#loading{
 	height: 100%;
 	min-height: 100%;
 	position:absolute;
-	background-color: #fff;
+	/*background-color: #fff;*/
 	z-index: 99999;
 }
 
-div#loadingbar{
+div#loadingimg{
 	width: 195px;
 	height: 196px;
 	position:relative;
@@ -91,6 +92,10 @@ div#loadingbar{
 	
 }
 
-div#loadingbar img{
+div#loadingimg img{
 	text-indent: 360px;
+}
+
+div#loadingimg div#loadingbar{
+	
 }

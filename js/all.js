@@ -1,6 +1,8 @@
 $(function(){
 
-	$('div#loadingbar img').animate({  
+
+
+	$('div#loadingimg img').animate({  
 		textIndent: 0 
 	},{
    		step: function(now,fx) {
