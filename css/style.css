@@ -11,10 +11,17 @@ body{
 	margin: 0;
 	padding: 0;
 	background-color: #000;
-	font-family: "Helvetica"
+	font-family: "Helvetica";
+	overflow:hidden;
 }
 
+/*after*/
 /*top*/
+
+div#after{
+
+	display: none;
+}
 
 div#header{
 	width: 100%;
@@ -36,11 +43,13 @@ ul#nav{
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius:10px;
 	opacity:0.8;
+
 }
 
 ul#nav li{
 	float: left;
 	margin: 0 50px 0 0;
+
 }
 
 div#void{
@@ -60,16 +69,19 @@ div#void{
 div#container div{
 	width:100%;
 	height: 432px;
+
 }
+
 
 div#draw{
 	position: absolute;
 	background-image: url(../img/back001.png);
 	background-position: center;
 	background-repeat: no-repeat;
-	top:300px;
-}
+	top:0;
+	display: none;
 
+}
 
 /*loading*/
 
@@ -78,8 +90,9 @@ div#loading{
 	height: 100%;
 	min-height: 100%;
 	position:absolute;
-	/*background-color: #fff;*/
+	background-color: #fff;
 	z-index: 99999;
+
 }
 
 div#loadingimg{
@@ -89,13 +102,44 @@ div#loadingimg{
 	margin: 0 auto;
 	top:200px;
 	z-index: 999999;
-	
+
 }
 
 div#loadingimg img{
-	text-indent: 360px;
+	text-indent: 360px;/*旋转角度参数*/
+
 }
+
+
+div#loading #cover_1,div#loading #cover_2{
+	width: 10px;
+	height: 10px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top:132px;
+
+}
+
+div#loading #cover_1{
+	background-color: #000;
+
+}
+
+div#loading #cover_2{
+	background-color: #aaa;
+	-moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+}
+
+
+
+
 
 div#loadingimg div#loadingbar{
 	
 }
+
