@@ -40,37 +40,26 @@ $(function(){
 					})
 					$('div#loadingimg').animate({
 						width:'0',
-						height:'0'
+						height:'0',
+						top:'300px'
 					})
 					$('div#loadingimg img').animate({
 						width:'0',
-						height:'0'
+						height:'0',
+						top:'300px'
 					})
 
-				})
+				})//缩放时，logo的位置需要算一下，包括初始定位
 				.promise().done(function(){
 					$('#loading').delay(1000).animate({
 						top:'100%'
 					})
-				})
+				})	
 	
 		})//promise	
 
 			
-
 	
-
-
-
-
-
-
-
-
-
-
-		
-		
-
+	
 
 });

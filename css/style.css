@@ -77,11 +77,12 @@ div#draw{
 	position: absolute;
 	background-image: url(../img/back001.png);
 	background-position: center;
-	background-repeat: no-repeat;
 	top:0;
 	display: none;
 
 }
+
+
 
 /*loading*/
 
@@ -90,8 +91,11 @@ div#loading{
 	height: 100%;
 	min-height: 100%;
 	position:absolute;
+	background-repeat:no-repeat;
+	background-position:top center;
 	background-color: #fff;
 	z-index: 99999;
+	text-indent: 10px;
 
 }
 
@@ -111,28 +115,15 @@ div#loadingimg img{
 }
 
 
-div#loading #cover_1,div#loading #cover_2{
+div#loading #cover_1{
 	width: 10px;
 	height: 10px;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 	top:132px;
-
-}
-
-div#loading #cover_1{
 	background-color: #000;
 	text-indent: 0px;/*旋转角度参数*/
-
-}
-
-div#loading #cover_2{
-	background-color: #aaa;
-	-moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
 
 }
 
