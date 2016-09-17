@@ -10,7 +10,7 @@ html{
 body{
 	margin: 0;
 	padding: 0;
-	background-color: #000;
+	background-color: #24211c;
 	font-family: "Helvetica";
 	overflow:hidden;
 }
@@ -123,6 +123,7 @@ div#loading #cover_1,div#loading #cover_2{
 
 div#loading #cover_1{
 	background-color: #000;
+	text-indent: 0px;/*旋转角度参数*/
 
 }
 
