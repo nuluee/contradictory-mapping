@@ -16,23 +16,8 @@ $(function(){
 			$(this).parent().next()
 				.animate({width:'100%'})
 				.animate({height:'100%'})
-				.delay(1000)
 				.animate({top:'-196'})
-				.animate({width:'1%'})
-				.delay(2000)
-				.animate({
-					textIndent: -90,
-					width:'90%',
-				},{
-
-					step: function(now,fx){
-
-						$(this).css('-webkit-transform','rotateZ('+now+'deg)'); 
-						$(this).css('-moz-transform','rotateZ('+now+'deg)');
-						$(this).css('transform','rotateZ('+now+'deg)'); 
-
-						},duration:500
-					},'linear')
+				.animate({width:'0%'})
 				.promise().done(function(){
 					$(this).animate({
 						width:'0',
