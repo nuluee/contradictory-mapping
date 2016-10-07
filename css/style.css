@@ -19,7 +19,7 @@ body{
 /*top*/
 
 div#after{
-	text-indent: center;
+
 
 }
 
@@ -30,28 +30,25 @@ div#header{
 	left: 0;
 	top: 0;
 	z-index: 9999;
+	
 }
 
-ul#nav{
-	display: none;
-
-	width: 950px;
-	margin: 0 auto;
-	padding: 20px;
+div#header div#gototop{
+	width: 30px;
 	height: 30px;
-	position: relative;
-	list-style: none;
-	background-color: #fff;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius:10px;
-	opacity:0.8;
-
+	background-color:#24211c;
+	position: absolute;
+	left: 0px; 
+	margin: 20px
 }
 
-ul#nav li{
-	float: left;
-	margin: 0 50px 0 0;
-
+div#header div#menu{
+	width: 30px;
+	height: 30px;
+	background-color:#24211c;
+	position: absolute;
+	right: 0px; 
+	margin: 20px
 }
 
 div#void{
@@ -67,6 +64,17 @@ div#void{
 
 }
 
+/*right*/
+
+div#jumppoint{
+	width: 20px;
+	height: 60px;
+	position: fixed;
+	right: 0;
+	top: 40%;
+	background-color:#24211c;
+	z-index: 9999;
+}
 
 /*center*/
 
@@ -89,6 +97,8 @@ div#container div{
 	width:100%;
 	height:100%;
 	overflow:hidden;
+	min-height:100%;/*这句和下面那句好像对next没关系啊*/
+  	height: auto !important;
 
 }
 
@@ -99,10 +109,27 @@ div#index{
 	background-image: url(../img/bg/index.png);
 	background-position: bottom center ;
 	background-repeat: no-repeat;
-	background-color: #F8F4E6;
+	background-color: #DDDCD7;
+	background-attachment: fixed;
 
 }
 
+
+div#next{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 20px;
+	background-color: #24211c;
+	opacity: 0.5;
+	clear: both;
+	text-align: center;
+}
+
+div#next span{
+	color: #ffffff;
+	opacity: 1;
+}
 
 
 /*loading*/
