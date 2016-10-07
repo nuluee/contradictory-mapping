@@ -99,6 +99,7 @@ div#container div{
 	overflow:hidden;
 	min-height:100%;/*这句和下面那句好像对next没关系啊*/
   	height: auto !important;
+  	background-size: cover;
 
 }
 
