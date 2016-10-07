@@ -67,17 +67,18 @@ div#void{
 
 div#container div{
 	width:100%;
-	height: 432px;
+	height:100%;
 
 }
 
 
-div#draw{
+div#index{
 	position: absolute;
-	background-image: url(../img/back001.png);
-	background-position: center;
 	top:0;
-	display: none;
+	background-image: url(../img/bg/index.png);
+	background-position: bottom center ;
+	background-repeat: no-repeat;
+	background-color: #F8F4E6;
 
 }
 
